@@ -7,5 +7,6 @@
 </head>
 <body>
     <p>Hrllo</p>
+    <a href="./php/admin/login.php">đăng nhập</a>
 </body>
 </html>
