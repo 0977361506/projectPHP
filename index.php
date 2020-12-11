@@ -2,7 +2,7 @@
 <?php 
   session_start();
   include_once("./admin/pages/Controller/xuly.php");
-  if(!isset($_SESSION['username'])) header("Location:../php/admin/login.php ");
+ 
   $service =  new Service();
   $sanphammois = $service->getAllSanPhamNew();
   $sanphamhots =$service->getAllSanPhamHot();
