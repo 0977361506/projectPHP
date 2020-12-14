@@ -228,9 +228,18 @@
      $ten =  $_POST["ten"] ;
      $gia =  $_POST["gia"] ;
      $giamgia =  $_POST["giam"] ;
-     $hot =  $_POST["hot"] ;
-     $moi =  $_POST["moi"] ;
-     $status =  $_POST["status"] ;
+     if(isset($_POST['hot'])){
+      $hot =  $_POST["hot"] ;
+     }else $hot =  0;
+     if(isset($_POST['moi'])){
+      $moi =  $_POST["moi"] ;
+     }else $moi =  0;
+     if(isset($_POST['status'])){
+      $status =  $_POST["status"] ;
+     }else $status =  0;
+
+    
+  
      $danhmuc =  $_POST["danhmuc"] ;
      $mota =  $_POST["motas"] ;
      $sl =  $_POST["sl"] ;

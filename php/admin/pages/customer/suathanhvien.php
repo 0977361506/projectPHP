@@ -352,7 +352,7 @@ if(isset($_POST["capnhat"])){
               <div class="col-md-6 mb-3">
                 <label >Password</label>
                 <div class="input-group">
-                  <input type="text" class="form-control" value="<?php echo $info['password'] ?>" name="pass"  >  
+                  <input type="password" class="form-control" value="<?php echo $info['password'] ?>" name="pass"  >  
                 </div>
               </div>
               

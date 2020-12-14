@@ -1054,7 +1054,7 @@ form.example::after {
                    s+=` <td> 
                       <a href="#"><i data-toggle="modal" data-target="#myModal" class="fa fa-plus-circle" aria-hidden="true" style="color: #00ff8e;"></i></a>
                       <a href="suathanhvien.php?id=`+tv.id+`"><i class="fas fa-pencil-alt text-secondary"></i></a> 
-                      <a href="xoathanhvien.php?id=`+tv.id+`"><i class="fas fa-trash-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt xoa" id=`+tv.id+` onclick="xoathanhvien(this)"></i></a>
                       </td>    
                   </tr>`;
               });
@@ -1122,7 +1122,7 @@ form.example::after {
                    s+=` <td> 
                       <a href="#"><i data-toggle="modal" data-target="#myModal" class="fa fa-plus-circle" aria-hidden="true" style="color: #00ff8e;"></i></a>
                       <a href="suathanhvien.php?id=`+tv.id+`"><i class="fas fa-pencil-alt text-secondary"></i></a> 
-                      <a href="xoathanhvien.php?id=`+tv.id+`"><i class="fas fa-trash-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt xoa" id=`+tv.id+` onclick="xoathanhvien(this)"></i></a>
                       </td>    
                   </tr>`;
               });

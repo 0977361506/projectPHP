@@ -18,7 +18,7 @@ FROM sanpham
 INNER JOIN danhgia
 ON sanpham.id = danhgia.idsanpham 
 where danhgia.ngaygio BETWEEN '$lastMonth' and '$timecurrent' ) as bangphu 
-group by bangphu.id  ORDER BY  bangphu.diemso DESC LIMIT 5 ;
+group by bangphu.id  ORDER BY tongdiem DESC limit 5 ;
   ";
 $result = mysqli_query($conn,$sqldm);
 $result_array = array();
@@ -39,7 +39,7 @@ if(isset($_POST['timkiemtg'])){
  INNER JOIN danhgia
  ON sanpham.id = danhgia.idsanpham 
  where danhgia.ngaygio BETWEEN '$timestart' and '$timeend' ) as bangphu 
- group by bangphu.id  ORDER BY  bangphu.diemso DESC LIMIT 5 ;
+ group by bangphu.id  ORDER BY  tongdiem DESC LIMIT 5 ;
        ";
  $result = mysqli_query($conn,$sqldm);
  $result_array = array();
